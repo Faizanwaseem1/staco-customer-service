@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staco - Customer Service </title>
+    <link rel="icon" type="image/svg+xml" href="staco-logo3.svg">
+    <script src="staco-logo3.svg"></script>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts.js"defer></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                brand: {
+                  50: '#eef2ff',
+                  600: '#4f46e5',
+                  700: '#4338ca',
+                }
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<!header>
+<body  class="bg-slate-50 text-slate-800 antialiased font-sans">
+ <!-- Fixed Staco Header with Full Mega Menu, Submenus & Scroll Show/Hide -->
+<header id="staco-header" class="header-section fixed z-[9999] top-0 left-0 w-full py-[24px] px-0 v2  bg-white transition-all duration-300 ease-in-out">
+<div class="max-w-[1265px] h-22 w-full mx-auto px-[20px] md:px-[40px] lg:px-[60px]">
+        <div class="header-nav relative flex items-center justify-start gap-[60px]">
+
+      <!-- Brand Logo -->
+      <div class="header-brand">
+        <a class="w-[125px] h-[45px] flex items-center" href="/">
+          <img alt="logo" loading="lazy" width="145" height="45" decoding="async" class="logo-dark w-full h-auto" src="logo-dark.svg">
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggler -->
+      <div class="menu-toggler md:hidden">
+        <button type="button" class="flex items-center justify-center p-2">
+          <img alt="menu" loading="lazy" width="20" height="16" src="/assets/images/icons/menu.svg">
+        </button>
+      </div>
+
+      <!-- Navigation & Extra Actions -->
+      <div class="header-nav-right hidden md:flex items-center justify-between w-full gap-[8px]">
+        <ul class="main-menu flex items-center gap-[34px] m-0 p-0 list-none">
+          <li class="nav-item home-nav">
+            <a class="nav-link text-[#111] hover:text-[#0095FF] transition-colors font-medium text-[16px]" href="/customer-service#">Home</a>
+          </li>
+          <li class="nav-item relative group">
+            <a class="nav-link flex items-center gap-[4px] text-[#111] hover:text-[#0095FF] transition-colors font-medium text-[16px]" href="#">
+              Pages
+              <svg class="w-3.5 h-3.5 mt-[1px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+            <div class="submenu-box absolute left-0 top-full mt-[10px] w-[230px] bg-white rounded-[10px] shadow-lg py-[10px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <ul class="m-0 p-0 list-none">
+                <li><a class="block px-[20px] py-[8px] text-[15px] text-[#111] hover:text-[#0095FF] hover:bg-[#f5f7fa]" href="/about-us">About Us</a></li>
+                <li><a class="block px-[20px] py-[8px] text-[15px] text-[#111] hover:text-[#0095FF] hover:bg-[#f5f7fa]" href="/our-services">Our Services</a></li>
+                <li><a class="block px-[20px] py-[8px] text-[15px] text-[#111] hover:text-[#0095FF] hover:bg-[#f5f7fa]" href="/pricing-plan">Pricing Plan</a></li>
+                <li><a class="block px-[20px] py-[8px] text-[15px] text-[#111] hover:text-[#0095FF] hover:bg-[#f5f7fa]" href="/blog">Latest Blog</a></li>
+                <li><a class="block px-[20px] py-[8px] text-[15px] text-[#111] hover:text-[#0095FF] hover:bg-[#f5f7fa]" href="/contact-us">Contact Us</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-[#111] hover:text-[#0095FF] transition-colors font-medium text-[16px]" href="/our-services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-[#111] hover:text-[#0095FF] transition-colors font-medium text-[16px]" href="/blog">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-[#111] hover:text-[#0095FF] transition-colors font-medium text-[16px] whitespace-nowrap" href="/contact-us">Contact Us</a>
+          </li>
+        </ul>
+
+        <ul class="header-extra flex items-center gap-[22px] m-0 p-0 list-none">
+          <li>
+            <a class="v2 font-semibold text-[#111] hover:text-[#0095FF] text-[16px]" href="/auth/login">Sign in</a>
+          </li>
+          <li>
+           <a id="start-free-btn" class="group relative inline-block overflow-hidden bg-[#CCEAFF] hover:bg-[#0095FF] text-[#0095FF] hover:text-white px-[36px] py-[14px] rounded-full font-bold text-[16px] transition-colors duration-300" href="/auth/sign-up">
+    <span class="block transition-transform duration-300 group-hover:-translate-y-[200%]">Start free</span>
+    <span class="absolute inset-0 flex items-center justify-center translate-y-full transition-transform duration-300 group-hover:translate-y-0">Start free</span>
+</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+<!-- Spacer div to prevent content clipping under the fixed header -->
+<div class="h-[75px]"></div>
+
+<!-- Client-side Scripts: Scroll Hide/Reveal & Mega Menu Image Preview Swapping -->
+
+<!hero>
+<section class="relative bg-white pt-[180px] pb-[30px] overflow-hidden">
+  <div class="max-w-[1210px] pr-20 w-full mx-auto px-[20px]">
+    <div class="flex items-center justify-between flex-wrap mx-[-15px]">
+
+      <!-- Left Column -->
+      <div class="w-1/2 px-[15px]">
+        <div class="flex items-center justify-start gap-[10px] mb-[37px]">
+          <span class="text-[15px] font-[700] text-white leading-[93%] px-[11px] py-[8px] rounded-[15px] bg-[#F9518C]">New</span>
+          <p class="m-0 text-[18px] font-[600] text-[#111] leading-[200%]">Hoogle integration added</p>
+        </div>
+
+        <h1 class="text-[60px] font-bold text-[#111111]  leading-[133.333%] mb-[18px]">
+          Best <span class="bg-[#FEC458] rounded-tr-[20px] px-[10px] inline-block pb-[7px] leading-[100%]">customer</span> Service software
+        </h1>
+
+        <ul class="mb-[40px] list-none p-0">
+          <li class="flex items-center justify-start gap-[8px] text-[#111] text-[18px] leading-[200%] mb-[10px]">
+            <span class="text-[20px] text-[#999]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                <path fill="currentColor" d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06a.733.733 0 0 1 1.047 0l3.052 3.093l5.4-6.425z"/>
+              </svg>
+            </span>
+            Ultimate control over teams and projects
+          </li>
+          <li class="flex items-center justify-start gap-[8px] text-[#111] text-[18px] leading-[200%] mb-[10px]">
+            <span class="text-[20px] text-[#999]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                <path fill="currentColor" d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06a.733.733 0 0 1 1.047 0l3.052 3.093l5.4-6.425z"/>
+              </svg>
+            </span>
+            No per user fee &amp; simple fixed price
+          </li>
+        </ul>
+
+        <a href="#" class="relative inline-block w-[220px] h-[60px] rounded-full overflow-hidden bg-[#0095FF] group mb-[30px]">
+    <!-- Pehla text: hover par upar jata hai -->
+    <span class="w-full h-full flex items-center justify-center text-white font-[700] text-[15px] transition-transform duration-300 group-hover:-translate-y-full">Get Started for Free</span>
+
+    <!-- Doosra text: neeche chhupa hai, hover par beech mein aata hai -->
+    <span class="absolute inset-0 flex items-center justify-center text-white font-[700] text-[15px] translate-y-full transition-transform duration-300 group-hover:translate-y-0">Get Started for Free</span>
+</a>
+      </div>
+
+      <!-- Right Column -->
+      <div class="w-1/2 px-[15px]">
+        <div class="relative max-w-[450px] ml-auto">
+          <div class="bg-[#00CEC9] p-[17px] rounded-full rounded-br-[0] max-w-[170px] absolute top-[-15%] left-[-10%]">
+            <img src="hero-img-men-1.webp" alt="avatar" class="w-full h-full rounded-full object-cover">
+          </div>
+          <div class="bg-[#F9518C] p-[9px] rounded-full rounded-br-[0] max-w-[92px] absolute top-[40%] left-[-12%] rotate-[-80deg]">
+            <img src="hero-img-men-2.webp" alt="avatar" class="rotate-[80deg] w-full h-full rounded-full object-cover">
+          </div>
+          <div class="absolute top-0 animate-float-reverse right-[40%] max-w-[15%]">
+            <img src="like_icon.svg" alt="like">
+          </div>
+          <div class="absolute bottom-[20%] animate-float-reverse max-w-[15%] left-[-5%]">
+            <img src="check-coin.webp" alt="check">
+          </div>
+          <img src="index2-hero-img.webp" alt="Customer Service Representative">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!Animation marquee>
+<section class="py-12 bg-white overflow-hidden border-t border-white">
+  <div class="w-full max-w-6xl mx-auto px-4 py-8">
+  
+    <!-- Heading -->
+    <h2 class="text-xl font-semibold tracking-wider text-black  mb-6">
+      Big & small business trusted us
+    </h2>
+
+    <!-- Marquee Container with Tailwind Mask -->
+    <div class="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_128px,black_calc(100%-128px),transparent)]">
+      
+      <!-- Scrolling Track (w-max ensures it stretches to fit both sets side-by-side) -->
+      <div class="flex space-x-16 animate-marquee items-center py-2 w-max">
+        
+        <!-- Logo Set 1 -->
+        <div class="flex items-center gap-16 shrink-0">
+          <span class="text-xl font-bold tracking-tight text-slate-400 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition"><img src="portis.webp" alt="portis"></span>
+          <span class="text-xl font-black tracking-tight text-slate-400 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition"><img src="envato.webp" alt="portis"></span>
+          <span class="text-xl font-bold tracking-tight text-slate-400 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition"><img src="trustgo.webp" alt="portis"></span>
+          <span class="text-xl font-extrabold tracking-tight text-slate-400 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition"><img src="daomak.webp" alt="portis"></span>
+          <img src="jquery.webp" alt="jQuery Logo" class="h-8 w-auto grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition duration-300" />
+          <span class="text-xl font-extrabold tracking-tight text-slate-400 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition"><img src="github.webp" alt="portis"></span>
+        </div>
+
+        <!-- Logo Set 2 (Duplicate for Seamless Infinite Scroll Loop) -->
+        <div class="flex items-center gap-16 shrink-0" aria-hidden="true">
+          <span class="text-xl font-bold tracking-tight text-slate-400 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition"><img src="portis.webp" alt="portis"></span>
+          <span class="text-xl font-black tracking-tight text-slate-400 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition"><img src="envato.webp" alt="portis"></span>
+          <span class="text-xl font-bold tracking-tight text-slate-400 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition"><img src="trustgo.webp" alt="portis"></span>
+          <span class="text-xl font-extrabold tracking-tight text-slate-400 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition"><img src="daomak.webp" alt="portis"></span>
+          <img src="jquery.webp" alt="jQuery Logo" class="h-8 w-auto grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition duration-300" />
+          <span class="text-xl font-extrabold tracking-tight text-slate-400 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition"><img src="github.webp" alt="portis"></span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+</style>
+
+<!Featurs /  benefits>
+<!-- Features / Get Benefits Section -->
+<section class="py-16 pl-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Outer Card Container with Light Tint Background & Rounded Corners -->
+        <div class="bg-[#EEEFFB] rounded-[40px] px-8 py-16 lg:p-20">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Left Column: Title & Illustration -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <!-- Subtitle -->
+                        <span class="text-[#0095FF] inline-block mt-10 font-bold text-lg uppercase tracking-widest">Features</span>
+                        <!-- Main Heading -->
+                        <h2 class="text-3xl sm:text-4xl leading-[1.1] lg:text-5xl font-bold text-black tracking-tight mt-4">
+                            Get Benefits
+                        </h2>
+                    </div>
+
+                    <!-- Illustration / Graphic Block -->
+                    <div class="pt-4 flex justify-center lg:justify-start">
+                        <div class="relative w-64 h-64 flex items-center justify-center">
+                            <!-- Replace this SVG or image source with your specific asset -->
+                            <svg class="w-full h-full text-slate-900" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Envelope Body -->
+                               <img src="features-sms-icon.svg" alt="features Background">
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: 2x2 Feature Grid -->
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6 max-w-[550px] mt-[40px]">
+                    
+                    <!-- Feature Item 1: Email Marketing -->
+                    <div class="space-y-3">
+                        <div class="flex   items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-sky-100 text-[#008bff] flex items-center justify-center font-bold">
+                                <img src="icon_email.svg" alt="Email">
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900">Email Marketing</h3>
+                        </div>
+                        <p class="text-sm font-bold text-slate-600 leading-relaxed">
+                           Nor again is there anyone who<br>loves or pursues or desires to<br>pain, because it is pain
+                        </p>
+                    </div>
+
+                    <!-- Feature Item 2: IT & Help Desk -->
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-pink-100 text-[#ff3366] flex items-center justify-center font-bold">
+                               <img src="icon_chat.svg" alt="chat">
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900">IT & Help Desk</h3>
+                        </div>
+                        <p class="text-sm font-bold text-slate-600 leading-relaxed">
+                           Nor again is there anyone who<br>loves or pursues or desires to<br>pain, because it is pain
+                        </p>
+                    </div>
+
+                    <!-- Feature Item 3: Virtual Meeting -->
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-[#00e676] flex items-center justify-center font-bold">
+                               <img src="icon_video.svg" alt="customer-service">
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900">Virtual Meeting</h3>
+                        </div>
+                        <p class="text-sm font-bold text-slate-600 leading-relaxed">
+                           Nor again is there anyone who<br>loves or pursues or desires to<br>pain, because it is pain
+                        </p>
+                    </div>
+
+                    <!-- Feature Item 4: Task management -->
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-sky-100 text-[#008bff] flex items-center justify-center font-bold">
+                               <img src="icon_file.svg" alt="file">
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900">Task management</h3>
+                        </div>
+                        <p class="text-sm font-bold text-slate-600 leading-relaxed">
+                           Nor again is there anyone who<br>loves or pursues or desires to<br>pain, because it is pain
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!sticky post>
+<!-- Business Tools & Customer Relationship Sticky Section -->
+<section class="py-24 bg-white text-slate-900 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-[480px_1fr] gap-12 lg:gap-10 items-start">
+            
+            <!-- Left Column: Sticky Poster Image with Dynamic Floating Overlays -->
+            <div class="sticky top-28">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl max-w-[480px]">
+                    <!-- Main Background Image -->
+                    <img src="business-tool-img-bg.webp" 
+                         alt="Business team workspace" 
+                         class="w-full h-[280px] sm:h-[470px] object-cover">
+                    
+                    <!-- Dynamic Overlay Container (Changes based on scroll position) -->
+                    <div class="absolute bottom-5 right-5 w-[62%] min-w-[250px] z-10 transition-all duration-300">
+                        
+                        <!-- STATE 1: Shown during "Most Useful Features" & "Customer Relationship" -->
+                        <div id="card-state-1" class="absolute left-0 right-0 bottom-0 space-y-2 transition-opacity duration-300">
+                            <!-- Anna Neo Card -->
+                            <div class="bg-white/95 backdrop-blur-md rounded-xl px-3 py-2.5 shadow-lg flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-[#FFB020] shrink-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop" class="w-full h-full object-cover" alt="Anna">
+        </div>
+        <div class="flex-1 min-w-0">
+            <h4 class="text-[15px] font-bold text-[#111] leading-tight">Anna Neo</h4>
+            <div class="flex items-center gap-2 mt-1.5">
+                <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="#0084FF"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.2 5.42 3.15 7.16.16.14.26.35.27.57l.05 1.78c.02.57.6.94 1.12.71l1.99-.88c.17-.07.36-.09.53-.04.92.25 1.9.39 2.89.39 5.64 0 10-4.13 10-9.7S17.64 2 12 2zm6 7.46l-2.94 4.66a1.5 1.5 0 0 1-2.17.4l-2.34-1.75a.6.6 0 0 0-.72 0l-3.16 2.4c-.42.32-.97-.19-.69-.64l2.94-4.66a1.5 1.5 0 0 1 2.17-.4l2.34 1.75a.6.6 0 0 0 .72 0l3.16-2.4c.42-.32.97.19.69.64z"/></svg>
+                <div class="h-[5px] w-[90px] bg-slate-200 rounded-full"></div>
+                <div class="ml-auto flex items-center gap-3 text-[13px] font-semibold text-slate-500">
+                    <span class="flex items-center gap-1">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v11H9l-5 4V5z"/></svg>2
+                    </span>
+                    <span>33</span>
+                </div>
+            </div>
+        </div>
+    </div>
+                            <!-- Robert Alvez Card -->
+                            <div class="bg-white/95 backdrop-blur-md rounded-xl px-3 py-2.5 shadow-lg flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-[#5BC0DE] shrink-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" class="w-full h-full object-cover" alt="Robert">
+        </div>
+        <div class="flex-1 min-w-0">
+            <h4 class="text-[15px] font-bold text-[#111] leading-tight">Robert Alvez</h4>
+            <div class="flex items-center gap-2 mt-1.5">
+                <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#29A9EB"/><path fill="#fff" d="M5.5 11.8l11.2-4.3c.5-.2 1 .1.8.9l-1.9 9c-.1.6-.5.8-1 .5l-2.9-2.1-1.4 1.4c-.2.2-.3.3-.6.3l.2-3 5.4-4.9c.2-.2 0-.3-.4-.1l-6.7 4.2-2.9-.9c-.6-.2-.6-.6.2-.9z"/></svg>
+                <div class="h-[5px] w-[90px] bg-slate-200 rounded-full"></div>
+                <div class="ml-auto flex items-center gap-3 text-[13px] font-semibold text-slate-500">
+                    <span class="flex items-center gap-1">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v11H9l-5 4V5z"/></svg>10
+                    </span>
+                    <span>56</span>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Card 3: Romelo Ana (WhatsApp) -->
+    <div class="bg-white/95 backdrop-blur-md rounded-xl px-3 py-2.5 shadow-lg flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-[#F4A6B7] shrink-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop" class="w-full h-full object-cover" alt="Romelo">
+        </div>
+        <div class="flex-1 min-w-0">
+            <h4 class="text-[15px] font-bold text-[#111] leading-tight">Romelo Ana</h4>
+            <div class="flex items-center gap-2 mt-1.5">
+                <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#25D366"/><path fill="#fff" d="M12 5.5a6.5 6.5 0 0 0-5.6 9.8L5.5 18.5l3.3-.9A6.5 6.5 0 1 0 12 5.5zm3.3 8.9c-.14.4-.8.75-1.1.8-.3.05-.65.07-1.05-.07-.25-.08-.57-.19-.98-.37-1.72-.74-2.85-2.47-2.93-2.59-.09-.11-.7-.93-.7-1.77s.44-1.25.6-1.42c.15-.17.33-.21.44-.21h.31c.1 0 .24-.04.37.28.14.34.47 1.17.51 1.25.04.08.07.18.01.29-.05.11-.08.18-.16.28-.08.1-.17.22-.24.3-.08.08-.16.17-.07.34.09.17.4.66.87 1.07.6.53 1.1.7 1.27.78.17.09.27.07.37-.04.1-.12.43-.5.55-.68.11-.17.23-.14.39-.08.16.06 1.01.48 1.18.56.17.09.29.13.33.2.04.07.04.4-.1.79z"/></svg>
+                <div class="h-[5px] w-[90px] bg-slate-200 rounded-full"></div>
+                <div class="ml-auto flex items-center gap-3 text-[13px] font-semibold text-slate-500">
+                    <span class="flex items-center gap-1">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v11H9l-5 4V5z"/></svg>8
+                    </span>
+                    <span>20</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- STATE 2 (middle): Live Support Chart Card -->
+<div id="card-state-2" class="absolute left-0 right-0 bottom-0 space-y-2 hidden opacity-0 transition-opacity duration-300">
+    <div class="bg-white rounded-2xl p-4 shadow-lg">
+        <span class="text-[13px] font-bold text-[#111]">Live Support</span>
+
+        <div class="flex items-end justify-between mt-2">
+            <div>
+                <p class="text-[12px] text-slate-500 mb-1">Total sessions</p>
+                <p class="text-[26px] font-bold text-[#111] leading-none">199</p>
+            </div>
+            <svg width="70" height="30" viewBox="0 0 70 30" fill="none">
+                <polyline points="0,22 10,14 20,20 30,8 40,16 50,4 60,10 70,2"
+                          stroke="#22C55E" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <div class="flex items-center justify-between mt-3 pt-3 border-t border-slate-100">
+            <span class="flex items-center gap-1.5 text-[13px] font-semibold text-[#111]">
+                <span class="w-2 h-2 rounded-full bg-red-500"></span> Live
+                <span class="text-slate-500 font-normal ml-1">3 visitors</span>
+            </span>
+            <a href="#" class="text-[13px] font-semibold text-[#0095FF]">View report</a>
+        </div>
+    </div>
+</div>
+
+                        <!-- STATE 3: Swaps in when scrolling down to "Customer Satisfaction" -->
+                        <div id="card-state-3" class="absolute left-0 right-0 bottom-0 space-y-2 hidden opacity-0 transition-opacity duration-300">
+                            <!-- Happiness Rating Card -->
+                            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-lg border border-slate-100">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-xs font-bold text-slate-500 uppercase">Happiness Rating</span>
+                                    <span class="text-sm font-extrabold text-slate-900">😍 96%</span>
+                                </div>
+                                <div class="flex items-center justify-between text-[11px] text-slate-500 pt-1 border-t border-slate-100">
+                                    <span>Good 42%</span>
+                                    <span>Best 54%</span>
+                                </div>
+                            </div>
+                            <!-- Live Support Metric Card -->
+                            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-lg border border-slate-100">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <span class="text-[10px] uppercase font-bold text-slate-400">Live Support</span>
+                                        <h4 class="text-sm font-bold text-slate-900 mt-0.5">Total sessions: <span class="text-indigo-600">199</span></h4>
+                                    </div>
+                                    <span class="text-xs text-emerald-600 font-semibold bg-emerald-50 px-2 py-1 rounded-md">🟢 3 visitors</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <!-- Right Column: Scrolling Content Sections -->
+            <div class=" space-y-36 pt-2">
+                
+                <!-- Section Block 1 -->
+                <div id="section-1" class="space-y-8  scroll-mt-32">
+                    <div>
+                        <span class="text-[#008bff] font-bold text-lg uppercase tracking-widest">Business Tools</span>
+                        <h2 class="text-3xl sm:text-5xl font-bold text-black  mt-2">
+                            Most useful features<br> you must need
+                        </h2>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Optimized Support</h3>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        We use as filler text for layouts, non-readability is of great<br> importance because those who do not know how to pursue<br> pleasure rationally encounter consequences that are extremely<br> painful. Nor again is there anyone who loves or pursues or desires to<br> obtain..
+                    </p>
+                    <div class="pt-2 space-y-2">
+    <div class="flex items-center gap-6">
+        <div class="flex items-center gap-2 text-sm font-semibold text-slate-800">
+            <span class="w-4 h-4 rounded-full  text-emerald-600 flex items-center justify-center text-xs">✓</span> 99% Survey Report
+        </div>
+        <div class="flex items-center gap-2 text-sm font-semibold text-slate-800">
+            <span class="w-4 h-4 rounded-full  text-emerald-600 flex items-center justify-center text-xs">✓</span> Trusted by teams
+        </div>
+    </div>
+    <div class="flex items-center gap-2 text-sm font-semibold text-slate-800">
+        <span class="w-4 h-4 rounded-full  text-emerald-600 flex items-center justify-center text-xs">✓</span> Self Service
+    </div>
+</div>
+                </div>
+                <!-- Section Block 2 -->
+                <div id="section-2" class="space-y-8  scroll-mt-32">
+                    <h2 class="text-2xl sm:text-3xl font-black   text-slate-900 tracking-tight">
+                        Customer Relationship  </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Great importance but because those who do not know how to pursue pleasure<br> rationally encounter consequences that are extremely painful.Nor again is there<br> anyone who loves or pursues or desires to obtain.
+                    </p>
+                   <div class="pt-1 space-y-2">
+    <div class="flex flex-wrap gap-2">
+        <span class="inline-flex items-center gap-2 bg-[#ECECEC] px-5 py-3 rounded-full text-[15px] font-bold text-[#444444]">
+            <span class="text-[#56C1A4] font-bold">✓</span> Service management
+        </span>
+        <span class="inline-flex items-center gap-2 bg-[#ECECEC] px-5 py-3 rounded-full text-[15px] font-bold text-[#444444]">
+            <span class="text-[#56C1A4] font-bold">✓</span> Contextual Support
+        </span>
+    </div>
+    <div>
+        <span class="inline-flex items-center gap-2 bg-[#ECECEC] px-5 py-3 rounded-full text-[15px] font-bold text-[#444444]">
+            <span class="text-[#56C1A4] font-bold">✓</span> Service management
+        </span>
+    </div>
+</div>
+                </div>
+
+                <!-- Section Block 3 (Triggers Card State 2 Switch) -->
+                <div id="section-3" data-trigger-card="2" class="space-y-4 scroll-mt-32">
+                    <h2 class="text-2xl sm:text-3xl font-black  text-slate-900 tracking-tight">
+                        Customer Satisfaction
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Readability is of great importance because those who do not know how to<br> pursue pleasure rationally encounter consequences that are extremely painful  is <br> there anyone who loves or pursues or desires to obtain..
+                    </p>
+                    <div class="space-y-2 pt-1">
+                        <div class="flex items-center gap-2 text-md font-semibold text-slate-800"><span class="w-4 h-4 rounded-full text-emerald-600 flex items-center justify-center text-md">✓</span> Share multiple screens at once and get an amazing<br> experiencein your team meeting.</div>
+                        <div class="flex items-center gap-2 text-md font-semibold text-slate-800"><span class="w-4 h-4 rounded-full text-emerald-600 flex items-center justify-center text-md">✓</span> No need for third-party plugins.</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+ 
+
+
+
+<!dotted map and live numbers>
+<!-- Statistics Counter Section -->
+<section class="relative py-[85px] bg-white overflow-hidden border-y border-slate-200">
+    
+    <!-- Dotted World Map Background Graphic -->
+    <div class="absolute inset-0 flex items-center justify-center opacity-30 pointer-events-none select-none">
+        <svg class="w-full max-w-4xl h-auto text-slate-400" viewBox="0 0 1200 600" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="map-dots" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+                    <circle cx="3" cy="3" r="2.5" fill="currentColor"/>
+                </pattern>
+            </defs>
+            <g fill="url(#map-dots)">
+                <!-- North America -->
+                <path d="M150,120 Q180,90 220,110 T280,140 T260,200 T200,220 T140,180 Z" />
+                <!-- South America -->
+                <path d="M280,280 Q330,260 350,320 T300,450 T250,400 Z" />
+                <!-- Europe -->
+                <path d="M520,100 Q580,80 620,130 T580,180 T510,150 Z" />
+                <!-- Africa -->
+                <path d="M530,200 Q600,190 610,260 T580,420 T500,380 T510,250 Z" />
+                <!-- Asia -->
+                <path d="M640,80 Q780,60 850,120 T950,220 T850,300 T700,220 T650,150 Z" />
+                <!-- Australia -->
+                <path d="M880,380 Q950,360 970,420 T900,480 Z" />
+            </g>
+        </svg>
+    </div>
+
+    <!-- Stats Container -->
+<div class="relative max-w-[1200px] mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+
+        <!-- Stat 1 -->
+        <div>
+            <div class="text-[48px] font-medium leading-tight text-[#0095FF]">
+                <span class="counter" data-target="200" data-suffix="">0</span>
+            </div>
+            <p class="mt-4 text-[18px] font-normal text-[#111]">Countries Worldwide</p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div>
+            <div class="text-[48px] font-medium leading-tight text-[#0095FF]">
+                <span class="counter" data-target="156" data-suffix="K">0</span>
+            </div>
+            <p class="mt-4 text-[18px] font-normal text-[#111]">Registered User</p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div>
+            <div class="text-[48px] font-medium leading-tight text-[#0095FF]">
+                <span class="counter" data-target="23" data-suffix="K">0</span>
+            </div>
+            <p class="mt-4 text-[18px] font-normal text-[#111]">Small &amp; Big Companies</p>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- Pure Frontend Counter Script -->
+
+<!why choose us>
+
+<!-- Why Choose Us / Get Amazing Benefits Section -->
+<section class="pt-[50px] pb-[85px] bg-white">
+  <div class="max-w-[1320px] w-full mx-auto px-[20px] md:px-[40px] lg:px-[60px]">
+
+    <!-- Heading -->
+    <div class="text-center mb-[46px]">
+      <span class="inline-block text-[#0095FF] font-bold text-[16px] uppercase tracking-[0.2em] font-['Plus_Jakarta_Sans',sans-serif]">Why Choose Us</span>
+      <h2 class="mt-[10px] text-[48px] leading-[1.2] font-bold text-black font-['Plus_Jakarta_Sans',sans-serif]">Get amazing benefits</h2>
+    </div>
+
+    <!-- 3 Columns -->
+    <div class="grid grid-cols-1 md:grid-cols-[300px_414px_300px] justify-center items-center gap-y-10 md:gap-x-[78px]">
+
+      <!-- Left Column (left-aligned) -->
+      <div class="flex flex-col justify-between md:h-[414px] md:py-[20px] gap-10 text-left">
+        <div class="space-y-4">
+          <h3 class="text-[24px] leading-[1.3] font-[600] text-[#111] font-['Plus_Jakarta_Sans',sans-serif]">One Click Meetings</h3>
+          <p class="text-[15px] leading-[200%] font-[600] text-[#555] font-['DM_Sans',sans-serif]">There are many variations of passages of always available but the majority human perception is tuned.</p>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-[24px] leading-[1.3] font-[600] text-[#111] font-['Plus_Jakarta_Sans',sans-serif]">Business Meeting</h3>
+          <p class="text-[15px] leading-[200%] font-[600] text-[#555] font-['DM_Sans',sans-serif]">We use as filler text for layouts, non-readability is of great importance: human perception is tuned to recognize</p>
+        </div>
+      </div>
+
+      <!-- Center Column (Circle Image) -->
+      <div class="flex items-center justify-center">
+        <img src="choose-us-img.svg" alt="Choose Us" class="w-full max-w-[414px] h-auto object-contain">
+      </div>
+
+      <!-- Right Column (right-aligned) -->
+      <div class="flex flex-col justify-between md:h-[414px] md:py-[20px] gap-10 text-left md:text-right">
+        <div class="space-y-4">
+          <h3 class="text-[24px] leading-[1.3] font-[600] text-[#111] font-['Plus_Jakarta_Sans',sans-serif]">Unlimited Screen</h3>
+          <p class="text-[15px] leading-[200%] font-[600] text-[#555] font-['DM_Sans',sans-serif]">There are many variations of passages of always available but the majority human perception is tuned</p>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-[24px] leading-[1.3] font-[600] text-[#111] font-['Plus_Jakarta_Sans',sans-serif]">File Sharing</h3>
+          <p class="text-[15px] leading-[200%] font-[600] text-[#555] font-['DM_Sans',sans-serif]">We use as filler text for layouts, non-readability is of great importance human perception is tuned to recognize</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<! pricing>
+<!-- Compare Price Section -->
+<section class="relative pt-[90px]  bg-white text-[#111] overflow-hidden">
+    <div class="max-w-[1200px] mx-auto px-4">
+
+        <!-- Header -->
+        <div class="text-center mb-[34px]">
+            <span class="inline-block text-[#0095FF] font-semibold text-[16px] uppercase tracking-[0.2em]">Compare Price</span>
+            <h2 class="mt-[14px] text-[44px] leading-[1.5] font-semibold text-[#111] font-['Montserrat',sans-serif]">
+                Giving you good value<br>
+                with <span class="inline-block bg-[#FEC458] rounded-[10px] rounded-tr-[28px] px-[12px] py-[6px] leading-[1.3]">best service</span>
+            </h2>
+        </div>
+
+        <!-- Cards Wrapper (770px = 365 + 40 + 365) -->
+        <div class="relative max-w-[770px] mx-auto flex flex-col lg:flex-row items-stretch justify-center gap-[40px]">
+
+            <!-- Floating: Thumbs Up (left) -->
+            <div class="hidden xl:block absolute left-[-185px] top-[150px] w-[125px] z-20 pointer-events-none">
+                <div class="animate-float-slow"><img src="like_icon.svg" alt="like_icon" class="w-full"></div>
+            </div>
+            <!-- Floating: Star (overlaps left card edge) -->
+            <div class="hidden xl:block absolute left-[-25px] top-[160px] w-[52px] z-20 pointer-events-none">
+                <div ><img src="star_icon.svg" alt="star_icon" class="w-full"></div>
+            </div>
+            <!-- Floating: Thumbs Down (top right) -->
+            <div class="hidden xl:block absolute right-[-79px] top-[108px] w-[49px] z-20 pointer-events-none">
+                <div ><img src="dis_like_icon.svg" alt="dis_like_icon" class="w-full"></div>
+            </div>
+            <!-- Floating: Emoji (right) -->
+            <div class="hidden xl:block absolute right-[-200px] top-[160px] w-[130px] z-20 pointer-events-none">
+                <div class="animate-float-reverse"><img src="emoji_icon.svg" alt="emoji_icon" class="w-full"></div>
+            </div>
+
+            <!-- Left Card -->
+            <div class="w-full lg:w-[365px] bg-white rounded-[10px] border border-[#e6e8ee] p-[40px] font-['DM_Sans',sans-serif]">
+
+                <!-- Plan pill -->
+                <div class="inline-flex items-center gap-[14px] bg-[#EBEFF9] px-[14px] h-[50px] rounded-[6px] text-[#111] font-bold text-[17px] cursor-pointer">
+                    <span>Professional</span>
+                    <svg class="w-4 h-4 text-slate-700" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+
+                <!-- Price -->
+                <div class="flex items-start mt-[20px] mb-[18px]">
+                    <span class="text-[15px] font-bold mt-[6px] mr-[2px]">$</span>
+                    <span class="text-[36px] leading-[1.1] font-medium">309</span>
+                    <span class="self-end text-[16px] ml-[8px] mb-[2px]">Per Year <span class="text-[#0095FF]">(For 15 User)</span></span>
+                </div>
+
+                <!-- Feature list -->
+                <ul class="space-y-[17px] text-[15px] leading-[24px] font-medium text-[#111]">
+                    <li class="flex items-center gap-[12px]"><span class="text-[#1DBF73] font-bold">✓</span><span>Email marketing</span></li>
+                    <li class="flex items-center gap-[12px]"><span class="text-[#1DBF73] font-bold">✓</span><span>Unlimited chat history</span></li>
+                    <li class="flex items-center gap-[12px]"><span class="text-[#1DBF73] font-bold">✓</span><span>Unlimited landing pages</span></li>
+                    <li class="flex items-center gap-[12px]"><span class="text-[#1DBF73] font-bold">✓</span><span>Unlimited automation templates</span></li>
+                    <li class="flex items-center gap-[12px]"><span class="text-[#1DBF73] font-bold">✓</span><span>Great Customer Support</span></li>
+                    <li class="flex items-center gap-[12px]"><span class="text-[#1DBF73] font-bold">✓</span><span>Unlimited lead funnels</span></li>
+                </ul>
+
+                <!-- Button -->
+               <a href="#" class="group relative mt-[38px] inline-flex items-center justify-center overflow-hidden w-[195px] h-[60px] bg-[#0095FF] hover:bg-[#0084e3] text-white font-bold text-[15px] rounded-full transition-colors duration-300">
+    <!-- Pehla text: hover par upar jata hai -->
+    <span class="transition-transform duration-300 group-hover:-translate-y-[200%]">Start for Free</span>
+
+    <!-- Doosra text: neeche chhupa hai, hover par beech mein aata hai -->
+    <span class="absolute inset-0 flex items-center justify-center translate-y-full transition-transform duration-300 group-hover:translate-y-0">Start for Free</span>
+</a>
+            </div>
+
+            <!-- VS Badge (gap ke beech, dono cards ke kinare dhak leta hai) -->
+            <div class="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80px] h-[80px] rounded-full bg-white border border-[#e6e8ee] items-center justify-center font-bold text-[16px] text-[#111] z-20">
+                vs
+            </div>
+
+            <!-- Right Card: 5 barabar rows -->
+            <div class="w-full lg:w-[365px] bg-white rounded-[10px] border border-[#e6e8ee] px-[40px] py-[8px] flex flex-col font-['DM_Sans',sans-serif]">
+
+                <div class="flex-1 flex items-center gap-[12px] py-[20px] border-b border-[#e6e8ee]">
+                    <div class="w-8 h-8 flex items-center justify-center text-[#0052cc]">
+                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M11.53 2c0 2.4 1.97 4.35 4.4 4.35h1.72V8.1c0 2.4 1.97 4.35 4.4 4.35V2h-10.52zm-4.4 4.35c0 2.4 1.97 4.35 4.4 4.35h1.72v1.75c0 2.4 1.97 4.35 4.4 4.35V6.35H7.13zm-4.4 4.35c0 2.4 1.97 4.35 4.4 4.35h1.72v1.75c0 2.4 1.97 4.35 4.4 4.35V10.7H2.73z"/></svg>
+                    </div>
+                    <div class="text-[15px] text-[#555]"><span class="text-[#111] font-bold text-[16px] mr-1">$580</span>/Year for 10 user</div>
+                </div>
+
+                <div class="flex-1 flex items-center gap-[12px] py-[20px] border-b border-[#e6e8ee]">
+                    <div class="w-8 h-8 flex items-center justify-center"><div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#ff5a1f] to-amber-500"></div></div>
+                    <div class="text-[15px] text-[#555]"><span class="text-[#111] font-bold text-[16px] mr-1">$999</span>/Year for 15 user</div>
+                </div>
+
+                <div class="flex-1 flex items-center gap-[12px] py-[20px] border-b border-[#e6e8ee]">
+                    <div class="w-8 h-8 flex items-center justify-center"><div class="w-6 h-6 rounded-full border-4 border-t-amber-400 border-r-[#0095FF] border-b-[#0095FF] border-l-[#0095FF]"></div></div>
+                    <div class="text-[15px] text-[#555]"><span class="text-[#111] font-bold text-[16px] mr-1">$550</span>/Year for 10 user</div>
+                </div>
+
+                <div class="flex-1 flex items-center gap-[12px] py-[20px] border-b border-[#e6e8ee]">
+                    <div class="w-8 h-8 flex items-center justify-center"><div class="w-6 h-6 rounded-full bg-[#0095FF] flex items-center justify-center text-white text-[10px]">💬</div></div>
+                    <div class="text-[15px] text-[#555]"><span class="text-[#111] font-bold text-[16px] mr-1">$229</span>/Year for 15 user</div>
+                </div>
+
+                <div class="flex-1 flex items-center gap-[12px] py-[20px]">
+                    <div class="w-8 h-8 flex items-center justify-center"><div class="w-5 h-6 rounded bg-rose-500"></div></div>
+                    <div class="text-[15px] text-[#555]"><span class="text-[#111] font-bold text-[16px] mr-1">$229</span>/Year for 15 user</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Smooth Floating Keyframes -->
+<style>
+@keyframes floatSlow {
+    0%, 100% {
+        transform: translateY(-12px);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+}
+
+@keyframes floatReverse {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-16px);
+    }
+}
+
+.animate-float-slow {
+    animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+    animation: floatReverse 4.5s ease-in-out infinite;
+}
+</style>
+
+<!integration>
+<!-- Integration Section -->
+<section class="relative pb-20 pt-10 bg-[#f4f6fa] text-slate-950 overflow-hidden rounded-[40px] mx-4 mt-0 sm:mx-6 mb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Top Guarantee Bar -->
+        <div class="max-w-7xl mx-auto bg-white rounded-full py-6 px-6 sm:px-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm font-semibold text-slate-800">
+            <!-- Left Perks -->
+            <div class="flex flex-wrap items-center justify-center gap-6 text-slate-700">
+                <span class="flex items-center gap-2">✓ No cards required</span>
+                <span class="flex items-center gap-2">✓ 30 day free trial</span>
+                <span class="flex items-center gap-2">✓ Get started in 2 minutes</span>
+            </div>
+
+            <!-- Right Pricing Link -->
+            <div class="flex items-center gap-3">
+                <span class="text-slate-600 font-medium">Want to see full pricing?</span>
+                <a href="#" class="inline-flex items-center gap-2 text-[#008bff] font-bold hover:underline">
+                    Compare Plans
+                    <span class="w-6 h-6 rounded-full bg-sky-100 flex items-center justify-center text-xs">➔</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Section Title -->
+        <div class="text-center max-w-2xl mx-auto mt-20 mb-16">
+            <span class="text-[#008bff] font-bold text-lg uppercase tracking-widest">Integration</span>
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-slate-900 tracking-tight mt-3 leading-[1.15]">
+                Integrate with the<br>
+                tools you already use
+            </h2>
+        </div>
+
+    </div>
+
+    <!-- Infinite Right-to-Left Scrolling Floating Icons Strip -->
+    <div class="relative w-full overflow-hidden mt-6 [mask-image:linear-gradient(to_right,transparent_0%,transparent_10%,black_30%,black_70%,transparent_90%,transparent_100%)]">
+        
+        <div class="flex gap-8 items-center animate-infinite-scroll w-max py-6">
+            
+            <!-- Loop Track 1 -->
+            <div class="flex gap-8 items-center shrink-0">
+                <!-- Icon 1 (Zapier pale) -->
+                <div class="w-20 h-20 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-orange-300 text-3xl font-black -translate-y-4">
+                 <img src="box-bg.svg" alt="Box Background">
+                </div>
+                <!-- Icon 2 (Mailchimp) -->
+                <div class="w-18 h-18 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-2xl translate-y-6">
+                    <img src="slack-bg.svg" alt="Box Background">
+                </div>
+                <!-- Icon 3 (HubSpot) -->
+                <div class="w-22 h-22 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-orange-500 text-3xl font-bold -translate-y-3">
+                    <img src="chat-bg.svg" alt="Box Background">
+                </div>
+                <!-- Icon 4 (Snapchat) -->
+                <div class="w-20 h-20 bg-[#fffc00] shadow-lg rounded-full flex items-center justify-center text-white text-3xl translate-y-6">
+                    <img src="drive-bg.svg" alt="Box Background">
+                </div>
+                <!-- Icon 5 (Messenger) -->
+                <div class="w-20 h-20 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-sky-500 text-3xl -translate-y-4">
+                    <img src="hubspot-bg.svg" alt="Box Background">
+                </div>
+                <!-- Icon 6 (Telegram) -->
+                <div class="w-20 h-20 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-sky-400 text-3xl translate-y-6">
+                    <img src="telegram-bg.svg" alt="Box Background">
+                </div>
+                <!-- Icon 7 (Google Drive) -->
+                <div class="w-22 h-22 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-emerald-500 text-3xl -translate-y-4">
+                   <img src="xero-bg.svg" alt="Box Background">
+                </div>
+                <!-- Icon 8 (Zoom) -->
+                <div class="w-20 h-20 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-blue-600 text-3xl translate-y-6">
+                    <img src="zapier-bg.svg" alt="Box Background">
+                </div>
+                <!-- Icon 9 (Zapier orange) -->
+                <div class="w-20 h-20 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-orange-600 text-3xl font-black -translate-y-4">
+                   <img src="zoom-bg.svg" alt="Box Background">
+                </div>
+                <!-- Icon 10 (Slack-like) -->
+                <div class="w-18 h-18 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-rose-300 text-2xl translate-y-6">
+                   <img src="box-bg.svg" alt="Box Background">
+                </div>
+            </div>
+
+            <!-- Loop Track 2 (Exact Duplicate for Gapless Seamless Scroll) -->
+            <div class="flex gap-8 items-center shrink-0" aria-hidden="true">
+                <div class="w-20 h-20 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-orange-300 text-3xl font-black -translate-y-4">
+                <img src="box-bg.svg" alt="Box Background">
+                </div>
+                <div class="w-18 h-18 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-2xl translate-y-6">
+                   <img src="slack-bg.svg" alt="Box Background">
+                </div>
+                <div class="w-22 h-22 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-orange-500 text-3xl font-bold -translate-y-3">
+                    <img src="chat-bg.svg" alt="Box Background">
+                </div>
+                <div class="w-20 h-20 bg-[#fffc00] shadow-lg rounded-full flex items-center justify-center text-white text-3xl translate-y-6">
+                    <img src="drive-bg.svg" alt="Box Background">
+                </div>
+                <div class="w-20 h-20 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-sky-500 text-3xl -translate-y-4">
+                    <img src="hubspot-bg.svg" alt="Box Background">
+                </div>
+                <div class="w-20 h-20 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-sky-400 text-3xl translate-y-6">
+                    <img src="telegram-bg.svg" alt="Box Background">
+                </div>
+                <div class="w-22 h-22 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-emerald-500 text-3xl -translate-y-4">
+                    <img src="xero-bg.svg" alt="Box Background">
+                </div>
+                <div class="w-20 h-20 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-blue-600 text-3xl translate-y-6">
+                    <img src="zapier-bg.svg" alt="Box Background">
+                </div>
+                <div class="w-20 h-20 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-orange-600 text-3xl font-black -translate-y-4">
+                   <img src="zoom-bg.svg" alt="Box Background">
+                </div>
+                <div class="w-18 h-18 bg-white/90 shadow-lg rounded-full flex items-center justify-center text-rose-300 text-2xl translate-y-6">
+                   <img src="box-bg.svg" alt="Box Background">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Continuous Right-to-Left Keyframe Animation -->
+<style>
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-infinite-scroll {
+    animation: scrollLeft 22s linear infinite;
+}
+
+.animate-infinite-scroll:hover {
+    animation-play-state: paused;
+}
+  
+</style>
+
+<!start building>
+<!-- CTA Banner Section -->
+<section class="relative bg-[#242549] h-150 text-white py-14 pb-24   mx-auto overflow-hidden">
+            <!-- Dots: sirf right 65% hissa -->
+    <div class="absolute z-0 inset-y-0 right-0 w-[65%] bg-[radial-gradient(#2D2E50_1.5px,transparent_1.5px)] [background-size:12px_12px]"></div>
+    <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 px-8 md:px-16 lg:px-[200px]">
+        
+        <!-- Left Side: Heading & Button -->
+        <div class="space-y-6 text-center ml-6  lg:text-left">
+            <h2 class="text-3xl sm:text-5xl font-bold  tracking-tight  leading-tight">
+                Start building a<br><br>high-performing Website
+            </h2>
+            <div>
+               <a href="#" class="group relative inline-block overflow-hidden bg-[#008bff] hover:bg-sky-600 text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition-colors duration-300">
+    <!-- Pehla text: hover par upar jata hai -->
+    <span class="block transition-transform duration-300 group-hover:-translate-y-[200%]">Get Started for Free</span>
+
+    <!-- Doosra text: neeche chhupa hai, hover par beech mein aata hai -->
+    <span class="absolute inset-0 flex items-center justify-center translate-y-full transition-transform duration-300 group-hover:translate-y-0">Get Started for Free</span>
+</a>
+            </div>
+        </div>
+
+        <!-- Right Side: Single Graphic Image -->
+        <div class="flex items-center justify-center shrink-0">
+            <!-- Replace 'your-graphic.png' with your actual image file name or path -->
+            <img src="building-img.svg" 
+                 alt="Start building high performing website" 
+                 class="w-65 z-50 sm:w-70 md:w-90 shrink-0  h-auto  object-contain">
+        </div>
+
+    </div>
+</section>
+<!footer>
+<!-- Footer Section -->
+<!-- Footer Section -->
+<footer class="bg-[#EDF0F5] lg:bg-[linear-gradient(to_right,#EDF0F5_35.5%,white_35.5%)] text-slate-800">
+
+    <!-- Top Row -->
+    <div class="max-w-[1200px] mx-auto px-[50px] pt-[90px] pb-[55px]">
+        <div class="grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-12 lg:gap-0 items-start">
+
+            <!-- Left: Video Card (bottom-right curved) -->
+            <div class="flex justify-center lg:justify-start">
+                <div class="relative w-[242px] h-[242px] rounded-br-[100%] overflow-hidden group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
+                         alt="Team collaborating"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+
+                    <!-- Play Button -->
+                    <div class="absolute inset-0 m-auto w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center transition-transform group-hover:scale-110">
+                        <svg class="w-5 h-5 text-[#0095FF] translate-x-0.5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: 4 Link Columns -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 bg-white lg:bg-transparent rounded-2xl lg:rounded-none p-6 lg:p-0">
+
+                <div>
+                    <h4 class="font-bold text-[14px] uppercase text-[#111] mb-[30px]">Products 🔥</h4>
+                    <ul class="space-y-[17px] text-[15px] font-semibold text-[#555]">
+                        <li><a href="#" class="hover:text-[#0095FF] transition">HR Management</a></li>
+                        <li><a href="#" class="hover:text-[#0095FF] transition">Invoice System</a></li>
+                        <li><a href="#" class="hover:text-[#0095FF] transition">Email Marketing</a></li>
+                        <li><a href="#" class="hover:text-[#0095FF] transition">Web Services</a></li>
+                        <li><a href="#" class="hover:text-[#0095FF] transition">Digital Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-[14px] uppercase text-[#111] mb-[30px]">Why Choose 💥</h4>
+                    <ul class="space-y-[17px] text-[15px] font-semibold text-[#555]">
+                        <li><a href="#" class="hover:text-[#0095FF] transition">Customers</a></li>
+                        <li><a href="#" class="hover:text-[#0095FF] transition">Why Staco ?</a></li>
+                        <li><a href="#" class="hover:text-[#0095FF] transition">Book a demo</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-[14px] uppercase text-[#111] mb-[30px]">Resources ❇️</h4>
+                    <ul class="space-y-[17px] text-[15px] font-semibold text-[#555]">
+                        <li><a href="#" class="hover:text-[#0095FF] transition">Latest Blog</a></li>
+                        <li><a href="#" class="hover:text-[#0095FF] transition">Supports</a></li>
+                        <li><a href="#" class="hover:text-[#0095FF] transition">Knowledgebase</a></li>
+                        <li><a href="#" class="hover:text-[#0095FF] transition">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-[14px] uppercase text-[#111] mb-[30px]">Company 💎</h4>
+                    <ul class="space-y-[17px] text-[15px] font-semibold text-[#555]">
+                        <li><a href="#" class="hover:text-[#0095FF] transition">About</a></li>
+                        <li><a href="#" class="hover:text-[#0095FF] transition">What we do</a></li>
+                        <li><a href="#" class="hover:text-[#0095FF] transition">Contact us</a></li>
+                        <li class="flex items-center gap-2">
+                            <a href="#" class="hover:text-[#0095FF] transition">Careers</a>
+                            <span class="bg-[#F9518C] text-white text-[11px] font-bold uppercase px-2.5 py-0.5 rounded-full">Hiring</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Row (full width line) -->
+    <div class="border-t border-slate-300">
+        <div class="max-w-[1200px] mx-auto px-[50px] py-[25px]">
+            <div class="grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-6 lg:gap-0 items-center">
+
+                <!-- Logo (yahan apna logo image bhi laga sakte hain) -->
+               <div class="flex items-center justify-center lg:justify-start">
+    <img src="logo-dark.svg" alt="Staco" class="h-10 w-auto">
+</div>
+
+                <!-- Social + Copyright -->
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+                    <div class="flex items-center gap-[18px]">
+                        <!-- Facebook -->
+                       <a href="#" class="group relative w-[46px] h-[46px] rounded-full overflow-hidden border-2 border-slate-200 bg-white hover:border-[#0095FF] transition-colors duration-300">
+    <!-- Pehla icon: hover par upar jata hai -->
+    <span class="w-full h-full flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-full">
+        <img src="facebook-2.svg" alt="Facebook" class="w-4 h-4">
+    </span>
+
+    <!-- Doosra icon: neeche chhupa hai, hover par beech mein aata hai -->
+    <span class="absolute inset-0 flex items-center justify-center translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+        <img src="facebook-2.svg" alt="Facebook" class="w-4 h-4">
+    </span>
+</a>
+                        <!-- X -->
+                        <a href="#" class="group relative w-[46px] h-[46px] rounded-full overflow-hidden border-2 border-slate-200 bg-white hover:border-[#0095FF] transition-colors duration-300">
+    <!-- Pehla icon: hover par upar jata hai -->
+    <span class="w-full h-full flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-full">
+        <img src="twitter-2.svg" alt="Facebook" class="w-4 h-4">
+    </span>
+
+    <!-- Doosra icon: neeche chhupa hai, hover par beech mein aata hai -->
+    <span class="absolute inset-0 flex items-center justify-center translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+        <img src="twitter-2.svg" alt="Facebook" class="w-4 h-4">
+    </span>
+</a>
+                        <!-- LinkedIn -->
+                        <a href="#" class="group relative w-[46px] h-[46px] rounded-full overflow-hidden border-2 border-slate-200 bg-white hover:border-[#0095FF] transition-colors duration-300">
+    <!-- Pehla icon: hover par upar jata hai -->
+    <span class="w-full h-full flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-full">
+        <img src="linkdin-2.svg" alt="Facebook" class="w-4 h-4">
+    </span>
+
+    <!-- Doosra icon: neeche chhupa hai, hover par beech mein aata hai -->
+    <span class="absolute inset-0 flex items-center justify-center translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+        <img src="linkdin-2.svg" alt="Facebook" class="w-4 h-4">
+    </span>
+</a>
+                        <!-- Instagram -->
+                         <a href="#" class="group relative w-[46px] h-[46px] rounded-full overflow-hidden border-2 border-slate-200 bg-white hover:border-[#0095FF] transition-colors duration-300">
+    <!-- Pehla icon: hover par upar jata hai -->
+    <span class="w-full h-full flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-full">
+        <img src="instagram-2.svg" alt="Facebook" class="w-4 h-4">
+    </span>
+
+    <!-- Doosra icon: neeche chhupa hai, hover par beech mein aata hai -->
+    <span class="absolute inset-0 flex items-center justify-center translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+        <img src="instagram-2.svg" alt="Facebook" class="w-4 h-4">
+    </span>
+</a>
+                        <!-- YouTube -->
+                        <a href="#" class="group relative w-[46px] h-[46px] rounded-full overflow-hidden border-2 border-slate-200 bg-white hover:border-[#0095FF] transition-colors duration-300">
+    <!-- Pehla icon: hover par upar jata hai -->
+    <span class="w-full h-full flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-full">
+        <img src="youtube-2.svg" alt="Facebook" class="w-4 h-4">
+    </span>
+
+    <!-- Doosra icon: neeche chhupa hai, hover par beech mein aata hai -->
+    <span class="absolute inset-0 flex items-center justify-center translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+        <img src="twitter-2.svg" alt="Facebook" class="w-4 h-4">
+    </span>
+</a>
+
+                    <p class="text-[15px] font-bold ml-20 text-[#555] m-0">2026 Staco. All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!scroll top button>
+    
+<button id="scroll-top" aria-label="Back to top"
+    class="fixed bottom-6 right-6 z-[9999] w-10 h-10 rounded-full bg-transparent flex items-center justify-center opacity-0 invisible translate-y-4 transition-all duration-300 hover:scale-110">
+
+    <!-- Progress ring -->
+    <svg class="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 40 40">
+        <circle cx="20" cy="20" r="17" fill="none" stroke="#D1D5DB" stroke-width="2"/>
+        <circle id="scroll-progress" cx="20" cy="20" r="17" fill="none" stroke="#2196F3" stroke-width="2"
+                stroke-linecap="round" stroke-dasharray="106.8" stroke-dashoffset="106.8"/>
+    </svg>
+
+    <!-- Arrow -->
+    <svg class="relative w-4 h-4 text-[#2196F3]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+</button>
+
+
+
+</footer>

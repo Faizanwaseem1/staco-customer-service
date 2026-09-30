@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in - Staco</title>
+  <link rel="icon" type="image/svg+xml" href="staco-logo3.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>body{font-family:'Plus Jakarta Sans',sans-serif}</style>
+</head>
+<body class="bg-white text-[#111]">
+<div class="min-h-screen grid lg:grid-cols-2">
+
+  <!-- Left: form -->
+  <div class="flex flex-col px-6 sm:px-12 lg:px-[75px] py-8">
+    <div class="flex items-center justify-between max-w-[470px] w-full mx-auto">
+      <a href="/"><img src="logo-dark.svg" alt="Staco" class="h-10 w-auto"></a>
+      <a href="/" class="text-[15px] font-semibold text-slate-500 hover:text-[#0095FF]">&larr; Go Back</a>
+    </div>
+
+    <div class="max-w-[470px] w-full mx-auto mt-16 lg:mt-24">
+      <h1 class="text-[40px] font-extrabold leading-tight">Hi there!</h1>
+      <p class="text-[24px] mt-1">Welcome to Staco <span aria-hidden="true">👋</span></p>
+
+      <div id="error" class="hidden mt-6 rounded-lg bg-red-50 text-red-700 text-[14px] font-semibold px-4 py-3" role="alert"></div>
+
+      <form id="login-form" class="mt-8" novalidate>
+        <label for="email" class="block text-[15px] font-medium mb-2">Email address</label>
+        <input id="email" type="email" autocomplete="email" placeholder="e.g.  example@mail.com"
+          class="w-full h-[60px] rounded-lg border border-slate-200 px-4 text-[15px] outline-none focus:border-[#0095FF] focus:ring-2 focus:ring-[#CCEAFF]">
+
+        <label for="password" class="block text-[15px] font-medium mt-6 mb-2">Password</label>
+        <input id="password" type="password" autocomplete="current-password" placeholder="********"
+          class="w-full h-[60px] rounded-lg border border-slate-200 px-4 text-[15px] outline-none focus:border-[#0095FF] focus:ring-2 focus:ring-[#CCEAFF]">
+
+        <button id="submit-btn" type="submit"
+          class="mt-6 w-full h-[60px] rounded-lg bg-[#0095FF] hover:bg-[#0084e3] text-white font-bold text-[15px] transition-colors disabled:opacity-60">Login</button>
+      </form>
+
+      <div class="flex items-center gap-4 my-6 text-[14px] font-medium text-slate-600">
+        <span class="flex-1 h-px bg-slate-200"></span>OR<span class="flex-1 h-px bg-slate-200"></span>
+      </div>
+
+      <a href="/auth/google" class="flex items-center justify-center gap-3 h-[60px] rounded-lg border border-slate-200 font-semibold text-[15px] hover:bg-slate-50 transition-colors">
+        <svg width="22" height="22" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 8 3.1l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.6-.4-3.9z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 8 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.6-.4-3.9z"/></svg>
+        Log in with Google
+      </a>
+      <a href="/auth/facebook" class="flex items-center justify-center gap-3 h-[60px] mt-4 rounded-lg border border-slate-200 font-semibold text-[15px] hover:bg-slate-50 transition-colors">
+        <svg width="22" height="22" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#1877F2"/><path fill="#fff" d="M16.5 24v-9h3l.5-3.6h-3.5V9.1c0-1 .3-1.7 1.8-1.7H20V4.2c-.3 0-1.4-.2-2.7-.2-2.7 0-4.5 1.6-4.5 4.6v2.8h-3V15h3v9z"/></svg>
+        Log in with Facebook
+      </a>
+    </div>
+  </div>
+
+  <!-- Right: photo -->
+  <div class="relative hidden lg:block">
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop" alt="Team working together" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+    <div class="absolute bottom-10 left-[75px] right-10 text-white">
+      <p class="font-bold text-[15px] mb-6">Big &amp; Small business trusted us 😍</p>
+      <div class="flex items-center gap-10 brightness-0 invert opacity-90">
+        <img src="jquery.webp" alt="jQuery" class="h-7 w-auto">
+        <img src="github.webp" alt="GitHub" class="h-7 w-auto">
+        <img src="portis.webp" alt="Portis" class="h-7 w-auto">
+        <img src="public\envato.webp" alt="Envato" class="h-7 w-auto">
+        <img src="trustgo.webp" alt="TrustGo" class="h-7 w-auto">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const errBox = document.getElementById('error');
+  const showError = m => { errBox.textContent = m; errBox.classList.remove('hidden'); };
+
+  // Google/Facebook se wapas aane par error dikhana
+  const qsErr = new URLSearchParams(location.search).get('error');
+  if (qsErr) showError(qsErr);
+
+  document.getElementById('login-form').addEventListener('submit', async e => {
+    e.preventDefault();
+    errBox.classList.add('hidden');
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
+    if (!email || !password) return showError('Write email and password both.');
+    const btn = document.getElementById('submit-btn');
+    btn.disabled = true; btn.textContent = 'Logging in...';
+    try {
+      const res = await fetch('/auth/login', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+      const data = await res.json();
+      if (data.ok) location.href = '/';
+      else showError(data.message || 'Cannot login.');
+    } catch { showError('Cannot connect to server.'); }
+    btn.disabled = false; btn.textContent = 'Login';
+  });
+</script>
+</body>
+</html>
